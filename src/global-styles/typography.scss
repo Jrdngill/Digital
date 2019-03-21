@@ -1,0 +1,65 @@
+// Font Family
+@import url('https://fonts.googleapis.com/css?family=Karla:400,400i,700|Work+Sans:600,700,800,900');
+
+// Headings
+
+@mixin heading-1($color: $black) {
+    font-size: 87px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    color: $color;
+}
+
+@mixin heading-2($color: $black) {
+    font-size: 72px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 800;
+    color: $color;
+}
+
+@mixin footer-heading($color: $white) {
+    font-size: 42px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    color: $color;
+}
+
+@mixin heading-3($color: $black) {
+    font-size: 40px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    color: $color;
+}
+
+@mixin heading-4($color: $yellow) {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 700;
+    color: $color;
+}
+
+// Body Text
+
+%medium {
+    line-height: 30px;
+    font-size: 21px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+}
+
+@mixin medium-text($color: $black) {
+    @extend %medium;
+    color: $color;
+}
+
+%large {
+    line-height: 38px;
+    font-size: 23px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 400;
+}
+
+@mixin large-text($color: $white) {
+    @extend %large;
+    color: $color;
+}

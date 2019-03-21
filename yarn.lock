@@ -669,6 +669,30 @@
     lodash "^4.17.11"
     to-fast-properties "^2.0.0"
 
+"@fortawesome/fontawesome-common-types@^0.2.16":
+  version "0.2.16"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-common-types/-/fontawesome-common-types-0.2.16.tgz#7428620cd5ac9b148f40b45413b5de7205954d5e"
+  integrity sha512-KVV0xwBM+JWwPlijCghjeQKBHziuvdWRF6kGQlaHKdUcJQ095YVcSjoXg90p6V91XL7RYoUEhYKu/t/f6HIS6g==
+
+"@fortawesome/fontawesome-svg-core@^1.2.16":
+  version "1.2.16"
+  resolved "https://registry.yarnpkg.com/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-1.2.16.tgz#f0a4f9dd410f3d2888665d48de95b1b69f238d9d"
+  integrity sha512-5PzC5M/XKHkCU8zWeCNhMRpoyKhSu7FgkC/wxsucs8P2SngcmcZIeY5HM/xrr7SF2sZN7np3bxD/L3vOHb2guQ==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.16"
+
+"@fortawesome/free-solid-svg-icons@^5.8.0":
+  version "5.8.0"
+  resolved "https://registry.yarnpkg.com/@fortawesome/free-solid-svg-icons/-/free-solid-svg-icons-5.8.0.tgz#5bfc94dd0aebf569c834a83e0649b8ed2a39da50"
+  integrity sha512-2UkbBDOHjnZJDtc9ePkdQosLa7tDtm29HsI9d8RUkL/ZXQ37hvQ7H5ymseSvmsOJXBF5PUszbF/nq3e2wY9mMA==
+  dependencies:
+    "@fortawesome/fontawesome-common-types" "^0.2.16"
+
+"@fortawesome/vue-fontawesome@^0.1.6":
+  version "0.1.6"
+  resolved "https://registry.yarnpkg.com/@fortawesome/vue-fontawesome/-/vue-fontawesome-0.1.6.tgz#18a0f4263b90f65180fc927325ba01896276ea04"
+  integrity sha512-HAGRbrOuGDwwUmCYdpzR0hhNQ3EE30dOS4JiJKcoZ+S4M210CxyU0OXCgzIg3HzK/23rlpHbV8zi9PDDZDnuIw==
+
 "@intervolga/optimize-cssnano-plugin@^1.0.5":
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/@intervolga/optimize-cssnano-plugin/-/optimize-cssnano-plugin-1.0.6.tgz#be7c7846128b88f6a9b1d1261a0ad06eb5c0fdf8"
