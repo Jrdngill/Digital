@@ -1,4 +1,6 @@
-# digital
+# Digital
+
+Copyright (c) 2019 Maestro Media Group B.V.
 
 ## Project setup
 ```
