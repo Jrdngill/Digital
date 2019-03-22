@@ -3,41 +3,50 @@
     <Header/>
     <div class="container">
       <h1>WE ARE MAESTRO</h1>
+      <br>
+      <button>Get to know us</button>
     </div>
-    <button>Get to know us</button>
-
-    <p>video here</p>
-    <div class="container-title">
-      <h2>Masters in connecting your brand with GEN-Z and Millenials.</h2>
-    </div>
-    <div class="container-services">
-      <div class="service-left">
-        <h4>01</h4>
-        <h3>Branding</h3>
-        <p
-          class="medium-text"
-        >Working out and coming up with concepts from A to Z. Thanks to our broad knowledge, tools and partners in the field of esports and broadcasting, we develop original concepts.</p>
+    <div class="gradient-background">
+      <iframe
+        width="1190"
+        height="660"
+        src="https://www.youtube.com/embed/pTA0DSfrGZ0"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <div class="container-title">
+        <h2>Masters in connecting your brand with GEN-Z and Millenials.</h2>
       </div>
-      <div class="service-right">
-        <h4>02</h4>
-        <h3>Esports</h3>
-        <p
-          class="medium-text"
-        >With years of experience in having esport teams playing in esport tournaments such as the Copenhagen Games, Maestro Digital is the market leader in the field of esports in the Benelux.</p>
-      </div>
-      <div class="service-left">
-        <h4>03</h4>
-        <h3>Marketing</h3>
-        <p
-          class="medium-text"
-        >Reaching young people together with the gaming and millennial market. Thanks to our experience in esports and general marketing, we can make every brand appeal to young people and ensure brand activation.</p>
-      </div>
-      <div class="service-right">
-        <h4>04</h4>
-        <h3>Graphic design</h3>
-        <p
-          class="medium-text"
-        >Creating and coming up with graphic concepts such as design and online related. Thanks to our experienced programmers and designers, we can create and set up projects in your house style.</p>
+      <div class="container-services">
+        <div class="service-left">
+          <h4>01</h4>
+          <h3>Branding</h3>
+          <p
+            class="medium-text"
+          >Working out and coming up with concepts from A to Z. Thanks to our broad knowledge, tools and partners in the field of esports and broadcasting, we develop original concepts.</p>
+        </div>
+        <div class="service-right">
+          <h4>02</h4>
+          <h3>Esports</h3>
+          <p
+            class="medium-text"
+          >With years of experience in having esport teams playing in esport tournaments such as the Copenhagen Games, Maestro Digital is the market leader in the field of esports in the Benelux.</p>
+        </div>
+        <div class="service-left">
+          <h4>03</h4>
+          <h3>Marketing</h3>
+          <p
+            class="medium-text"
+          >Reaching young people together with the gaming and millennial market. Thanks to our experience in esports and general marketing, we can make every brand appeal to young people and ensure brand activation.</p>
+        </div>
+        <div class="service-right">
+          <h4>04</h4>
+          <h3>Graphic design</h3>
+          <p
+            class="medium-text"
+          >Creating and coming up with graphic concepts such as design and online related. Thanks to our experienced programmers and designers, we can create and set up projects in your house style.</p>
+        </div>
       </div>
     </div>
     <Footer/>
@@ -66,18 +75,25 @@ body {
 }
 
 .container {
-  display: flex;
+  padding-top: 316px;
   justify-content: center;
   align-items: center;
-
   min-height: 55vh;
 }
 
+.gradient-background {
+  width: 100%;
+  padding-bottom: 400px;
+  background: url("../assets/images/gradient_1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 .container-title {
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: left;
+  padding-top: 128px;
 }
 
 .container-services {
@@ -89,6 +105,9 @@ body {
   align-items: center;
 }
 
+.container-services p {
+  @include medium-text;
+}
 .service-left {
   max-width: 500px;
   padding-left: 260px;

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1920" height="2067.86" viewBox="0 0 1920 2067.86">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.312" y1="0.214" x2="1.067" y2="1.286" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e76aff"/>
+      <stop offset="1" stop-color="#0874ef"/>
+    </linearGradient>
+  </defs>
+  <path id="R6_FINALS_BENELUX-10" d="M0,854.8S487.769,748.927,967.769,748.927,1920,511.64,1920,511.64V2463.466S1447.769,2579.5,967.769,2579.5,0,2463.466,0,2463.466Z" transform="translate(0 -511.64)" fill="url(#linear-gradient)"/>
+</svg>

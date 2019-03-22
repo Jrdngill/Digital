@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="2554.125" height="1309.209" viewBox="0 0 2554.125 1309.209">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.263" x2="0.934" y2="0.875" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#e76aff"/>
+      <stop offset="1" stop-color="#0874ef"/>
+    </linearGradient>
+  </defs>
+  <path id="R6_FINALS_BENELUX-10" class="cls-1" d="M1498.264,1316.817C1653.127,1111.144,1834.927,295.941,1214.454,258s-880.931,13.245-1859.187-11.16c-252.74,30.6-37.9,474.8-56.039,688.14-16.085,189.167-291.527,380.236-177.286,499.561,243.065,253.881,558.5.291,1614.391,64.123S1262.191,1630.346,1498.264,1316.817Z" transform="translate(905.726 -243.458)"/>
+</svg>
