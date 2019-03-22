@@ -49,6 +49,17 @@
         </div>
       </div>
     </div>
+
+    <div class="container-portfolio">
+      <div class="portfolio-left">
+        <img src="../assets/images/phone.png">
+      </div>
+      <div class="portfolio-right">
+        <h3>Want to see our previous work?</h3>
+        <button>Yes please!</button>
+      </div>
+    </div>
+    <Team/>
     <Footer/>
   </div>
 </template>
@@ -58,6 +69,7 @@
 import HelloWorld from "@/components/HelloWorld.vue";
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
+import Team from "@/components/Team.vue";
 
 export default {
   name: "home",
@@ -102,7 +114,6 @@ body {
   grid-template-columns: repeat(2, 1fr);
   text-align: left;
   justify-items: center;
-  align-items: center;
 }
 
 .container-services p {
@@ -118,6 +129,35 @@ body {
   padding-right: 260px;
 }
 
+.container-portfolio {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: left;
+  justify-items: center;
+  margin-top: -200px;
+  z-index: 2;
+}
+
+.portfolio-left {
+  max-width: 500px;
+  padding-left: 260px;
+}
+
+.portfolio-left img {
+  max-width: 700px;
+}
+
+.portfolio-right {
+  max-width: 500px;
+  padding-right: 260px;
+}
+
+.portfolio-right h3 {
+  font-size: 53px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+  color: $white;
+}
 button {
   width: 221px;
   height: 49px;
