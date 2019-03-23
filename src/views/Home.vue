@@ -56,7 +56,18 @@
       </div>
       <div class="portfolio-right">
         <h3>Want to see our previous work?</h3>
-        <button>Yes please!</button>
+        <div class="portfolio-right-button">
+          <button>Yes please!</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-team">
+      <div class="team-left">
+        <h3>Wil je met ons werken?</h3>
+      </div>
+      <div class="team-right">
+        <button>Contact Us</button>
       </div>
     </div>
     <Team/>
@@ -75,6 +86,7 @@ export default {
   name: "home",
   components: {
     HelloWorld,
+    Team,
     Header,
     Footer
   }
@@ -134,7 +146,7 @@ body {
   grid-template-columns: repeat(2, 1fr);
   text-align: left;
   justify-items: center;
-  margin-top: -200px;
+  margin-top: -220px;
   z-index: 2;
 }
 
@@ -150,6 +162,8 @@ body {
 .portfolio-right {
   max-width: 500px;
   padding-right: 260px;
+  text-align: right;
+  margin-top: -40px;
 }
 
 .portfolio-right h3 {
@@ -157,6 +171,41 @@ body {
   font-family: "Work Sans", sans-serif;
   font-weight: 800;
   color: $white;
+}
+
+.portfolio-right-button {
+  padding-top: 50px;
+}
+
+.portfolio-right button {
+  width: 221px;
+  height: 49px;
+  border-radius: 71px;
+  border: none;
+  font-size: 21px;
+  font-weight: bold;
+  color: $white;
+  background-color: $orange;
+}
+
+.container-team {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.team-left {
+  padding-left: 260px;
+}
+
+.team-left h3 {
+  font-size: 59px;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  color: $black;
+}
+.team-right {
+  padding-right: 260px;
 }
 button {
   width: 221px;

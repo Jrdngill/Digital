@@ -1,5 +1,5 @@
 # Digital
-Private license not for redistribution
+Private license not for redistribution,
 Copyright (c) 2019 Maestro Media Group B.V.
 
 ## Project setup
