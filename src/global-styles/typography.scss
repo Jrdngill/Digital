@@ -63,3 +63,27 @@
     @extend %large;
     color: $color;
 }
+
+%small {
+    font-size: 21px;
+    font-family: 'Karla', sans-serif;
+
+}
+
+@mixin small-text($color: $black) {
+    font-weight: 400;
+    @extend %small;
+    color: $color;
+}
+
+@mixin small-text-pink($color: $pink) {
+    font-weight: 400;
+    @extend %small;
+    color: $color;
+}
+
+@mixin small-text-bold($color: $black) {
+    font-weight: 700;
+    @extend %small;
+    color: $color;
+}

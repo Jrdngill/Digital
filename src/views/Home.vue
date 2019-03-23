@@ -63,11 +63,13 @@
     </div>
 
     <div class="container-team">
-      <div class="team-left">
-        <h3>Wil je met ons werken?</h3>
-      </div>
-      <div class="team-right">
-        <button>Contact Us</button>
+      <div class="team">
+        <div class="team-left">
+          <h3>Do you want to work with us? 😊</h3>
+        </div>
+        <div class="team-right">
+          <button>Contact Us</button>
+        </div>
       </div>
     </div>
     <Team/>
@@ -178,34 +180,50 @@ body {
 }
 
 .portfolio-right button {
-  width: 221px;
+  width: 152px;
   height: 49px;
   border-radius: 71px;
   border: none;
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
+  font-family: "Karla", sans-serif;
   color: $white;
   background-color: $orange;
 }
 
 .container-team {
+  max-width: 1260px;
+}
+
+.team {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
 }
 
 .team-left {
-  padding-left: 260px;
+  align-self: start;
 }
 
-.team-left h3 {
-  font-size: 59px;
+.team-right {
+  align-self: start;
+}
+
+.team h3 {
+  font-size: 50px;
   font-family: "Work Sans", sans-serif;
   font-weight: 700;
   color: $black;
 }
-.team-right {
-  padding-right: 260px;
+.container-team button {
+  width: 206px;
+  height: 49px;
+  border-radius: 71px;
+  border: none;
+  font-size: 21px;
+  font-weight: 700;
+  font-family: "Karla", sans-serif;
+  color: $white;
+  background-color: $orange;
 }
 button {
   width: 221px;
@@ -213,7 +231,8 @@ button {
   border-radius: 71px;
   border: none;
   font-size: 21px;
-  font-weight: bold;
+  font-weight: 700;
+  font-family: "Karla", sans-serif;
   color: $white;
   background-color: $pink;
 }
