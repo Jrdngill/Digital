@@ -12,6 +12,7 @@ import {
   FontAwesomeIcon
 } from '@fortawesome/vue-fontawesome'
 
+
 library.add(faUserSecret)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)

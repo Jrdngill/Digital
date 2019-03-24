@@ -38,6 +38,14 @@
     color: $color;
 }
 
+@mixin heading-5($color: $white) {
+    font-size: 239px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    color: $color;
+    opacity: 0.05;
+}
+
 // Body Text
 
 %medium {
@@ -60,6 +68,11 @@
 }
 
 @mixin large-text($color: $white) {
+    @extend %large;
+    color: $color;
+}
+
+@mixin large-text-black($color: $black) {
     @extend %large;
     color: $color;
 }

@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <font-awesome-icon icon="fa-twitter"/>
     <router-view/>
   </div>
 </template>

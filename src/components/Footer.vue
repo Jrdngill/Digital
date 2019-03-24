@@ -6,7 +6,6 @@
         Snellius 1, Office A6, 6442 RM Herleen
         <br>info@maestrodigital.nl
       </p>
-      <font-awesome-icon icon="spinner"/>
     </div>
   </div>
 </template>
