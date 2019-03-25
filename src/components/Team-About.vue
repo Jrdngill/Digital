@@ -31,7 +31,7 @@
 
 <script>
 export default {
-  name: "Team"
+  name: "Team-About"
 };
 </script>
 
@@ -40,7 +40,7 @@ export default {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   max-width: 1260px;
-  padding-left: 300px;
+  padding-left: 357px;
   padding-bottom: 300px;
   text-align: left;
 }

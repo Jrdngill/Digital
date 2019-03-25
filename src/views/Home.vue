@@ -4,7 +4,9 @@
     <div class="container">
       <h1>WE ARE MAESTRO</h1>
       <br>
-      <button>Get to know us</button>
+      <router-link to="/about">
+        <button>Get to know us</button>
+      </router-link>
     </div>
     <div class="gradient-background">
       <iframe
@@ -63,15 +65,14 @@
     </div>
 
     <div class="container-team">
-      <div class="team">
-        <div class="team-left">
-          <h3>Do you want to work with us? 😊</h3>
-        </div>
-        <div class="team-right">
-          <button>Contact Us</button>
-        </div>
+      <div class="team-left">
+        <h3>Do you want to work with us?</h3>
+      </div>
+      <div class="team-right">
+        <button>Contact Us</button>
       </div>
     </div>
+
     <Team/>
     <Footer/>
   </div>
@@ -192,28 +193,28 @@ body {
 }
 
 .container-team {
-  max-width: 1260px;
-}
-
-.team {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  text-align: left;
+  justify-items: center;
 }
 
 .team-left {
-  align-self: start;
+  max-width: 634px;
+  padding-left: 280px;
 }
 
 .team-right {
-  align-self: start;
+  padding-top: 100px;
+  max-width: 500px;
 }
-
-.team h3 {
-  font-size: 50px;
+.container-team h3 {
+  font-size: 59px;
   font-family: "Work Sans", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   color: $black;
 }
+
 .container-team button {
   width: 206px;
   height: 49px;
@@ -224,6 +225,7 @@ body {
   font-family: "Karla", sans-serif;
   color: $white;
   background-color: $orange;
+  cursor: pointer;
 }
 button {
   width: 221px;
@@ -235,6 +237,7 @@ button {
   font-family: "Karla", sans-serif;
   color: $white;
   background-color: $pink;
+  cursor: pointer;
 }
 
 h1 {

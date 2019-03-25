@@ -20,19 +20,4 @@ body {
   text-align: center;
   color: #2c3e50;
 }
-#nav {
-  padding: 30px;
-  a {
-    font-size: 20px;
-    font-weight: bold;
-    font-family: "Karla", sans-serif;
-    color: #2c3e50;
-    text-decoration: none;
-    padding-left: 23px;
-    padding-right: 23px;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
 </style>

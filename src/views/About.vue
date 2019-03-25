@@ -33,22 +33,22 @@
       <img src="../assets/images/group.jpeg">
     </div>
     <div class="container-team">
-      <div class="team">
-        <div class="team-left">
-          <h3>The Maestro Team</h3>
-        </div>
-        <div class="team-right">
-          <button>Contact Us</button>
-        </div>
-        <p class="large-text-black">
-          Maestro has an excellent team of people who all have experience
-          in different industries. From sports management to marketing,
-          graphic design and website programming. We are an all-round sport
-          & esport media agency.
-        </p>
+      <div class="team-left">
+        <h3>The Maestro Team</h3>
+      </div>
+      <div class="team-right">
+        <button>Contact Us</button>
       </div>
     </div>
-    <Team/>
+    <div class="container-team-text">
+      <p class="large-text-black">
+        Maestro has an excellent team of people who all have experience
+        in different industries. From sports management to marketing,
+        graphic design and website programming. We are an all-round sport
+        & esport media agency.
+      </p>
+    </div>
+    <Team-About/>
     <Footer/>
   </div>
 </template>
@@ -56,12 +56,12 @@
 <script>
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
-import Team from "@/components/Team.vue";
+import TeamAbout from "@/components/Team-About.vue";
 
 export default {
   name: "About",
   components: {
-    Team,
+    TeamAbout,
     Header,
     Footer
   }
@@ -98,28 +98,30 @@ export default {
 }
 
 .container-team {
-  max-width: 1260px;
-}
-
-.team {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  text-align: left;
+  justify-items: center;
+  padding-top: 161px;
 }
 
 .team-left {
-  align-self: start;
+  max-width: 634px;
+  padding-left: 290px;
 }
 
 .team-right {
-  align-self: start;
+  max-width: 500px;
+  padding-left: 40px;
+  padding-top: 70px;
 }
-
-.team h3 {
-  font-size: 50px;
+.container-team h3 {
+  font-size: 59px;
   font-family: "Work Sans", sans-serif;
-  font-weight: 700;
+  font-weight: 800;
   color: $black;
 }
+
 .container-team button {
   width: 206px;
   height: 49px;
@@ -130,14 +132,22 @@ export default {
   font-family: "Karla", sans-serif;
   color: $white;
   background-color: $orange;
+  cursor: pointer;
 }
 
-.container-team p {
-  @include large-text-black;
+.container-team-text {
+  max-width: 1117px;
+  padding-left: 357px;
+  text-align: left;
+  p {
+    @include large-text-black;
+  }
 }
+
 p {
   @include large-text;
 }
+
 h1 {
   @include heading-5;
   text-align: center;
