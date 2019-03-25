@@ -64,6 +64,19 @@
       </div>
     </div>
 
+    <div class="article-container">
+      <h2>Our Articles</h2>
+      <div class="catagory">
+        <p class="small-text-bold-active" id="#">All</p>
+        <p class="small-text-bold" id="#">Branding</p>
+        <p class="small-text-bold" id="#">Marketing</p>
+        <p class="small-text-bold" id="#">Esports</p>
+        <p class="small-text-bold" id="#">Design</p>
+
+        <button id="left">.</button>
+        <button id="right">.</button>
+      </div>
+    </div>
     <div class="container-team">
       <div class="team-left">
         <h3>Do you want to work with us?</h3>
@@ -192,6 +205,40 @@ body {
   background-color: $orange;
 }
 
+.article-container {
+  margin-left: -125px;
+  h2 {
+    @include heading-6;
+  }
+}
+
+.catagory {
+  padding-right: 650px;
+  p {
+    @include small-text-bold;
+    display: inline-block;
+    padding-right: 32px;
+  }
+
+  button {
+    width: 37px;
+    height: 37px;
+    border: solid $black 1px;
+    border-radius: 0px;
+    background-color: $white;
+    color: $black;
+    margin-right: 10px;
+  }
+
+  #left {
+    color: $grey;
+    border: solid $grey 1px;
+  }
+
+  #right {
+  }
+}
+
 .container-team {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -208,10 +255,11 @@ body {
   padding-top: 100px;
   max-width: 500px;
 }
+
 .container-team h3 {
   font-size: 59px;
   font-family: "Work Sans", sans-serif;
-  font-weight: 800;
+  font-weight: 700;
   color: $black;
 }
 

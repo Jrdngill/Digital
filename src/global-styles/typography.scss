@@ -46,6 +46,13 @@
     opacity: 0.05;
 }
 
+@mixin heading-6($color: $black) {
+    font-size: 59px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    color: $color;
+}
+
 // Body Text
 
 %medium {
@@ -96,6 +103,12 @@
 }
 
 @mixin small-text-bold($color: $black) {
+    font-weight: 700;
+    @extend %small;
+    color: $color;
+}
+
+@mixin small-text-bold-active($color: $yellow-orange) {
     font-weight: 700;
     @extend %small;
     color: $color;
