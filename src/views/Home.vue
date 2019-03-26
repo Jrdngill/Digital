@@ -73,10 +73,40 @@
         <p class="small-text-bold" id="#">Esports</p>
         <p class="small-text-bold" id="#">Design</p>
 
-        <button id="left">.</button>
-        <button id="right">.</button>
+        <button id="left-button">.</button>
+        <button id="right-button">.</button>
       </div>
     </div>
+
+    <div class="articles">
+      <div class="articles-card-large">
+        <div class="articles-test-large">
+          <h2>
+            How to Market to GenZ Effectively:
+            4 Takeaways from Savage.Z
+          </h2>
+          <p>#marketing</p>
+        </div>
+      </div>
+
+      <div class="articles-card-small">
+        <div class="articles-test-small">
+          <h2>Esports Brand Checklist 2019</h2>
+          <p>#branding #esports</p>
+        </div>
+      </div>
+
+      <div class="articles-card-small">
+        <div class="articles-test-small">
+          <h2>
+            3 Secrets to Take Your Esports
+            Brand to the Next Level
+          </h2>
+          <p>#marketing</p>
+        </div>
+      </div>
+    </div>
+
     <div class="container-team">
       <div class="team-left">
         <h3>Do you want to work with us?</h3>
@@ -206,6 +236,7 @@ body {
 }
 
 .article-container {
+  padding-top: 190px;
   margin-left: -125px;
   h2 {
     @include heading-6;
@@ -213,7 +244,7 @@ body {
 }
 
 .catagory {
-  padding-right: 650px;
+  padding-right: 550px;
   p {
     @include small-text-bold;
     display: inline-block;
@@ -230,20 +261,78 @@ body {
     margin-right: 10px;
   }
 
-  #left {
+  #left-button {
     color: $grey;
     border: solid $grey 1px;
+    float: right;
   }
 
-  #right {
+  #right-button {
+    float: right;
   }
 }
 
+.articles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding-top: 71px;
+  padding-left: 300px;
+  grid-gap: 18px;
+  overflow: hidden;
+}
+
+.articles-card-large {
+  text-align: left;
+  h2 {
+    @include article-heading;
+    padding-top: 364px;
+    padding-left: 46px;
+    padding-right: 174px;
+  }
+
+  p {
+    @include extra-small-text;
+    padding-top: 13px;
+    padding-left: 46px;
+  }
+}
+
+.articles-test-large {
+  background: url("../assets/images/test.jpg");
+  background-size: cover;
+  width: 772px;
+  height: 549px;
+  border-radius: 11px;
+}
+
+.articles-card-small {
+  text-align: left;
+  h2 {
+    @include article-heading;
+    padding-top: 364px;
+    padding-left: 46px;
+  }
+
+  p {
+    @include extra-small-text;
+    padding-top: 13px;
+    padding-left: 46px;
+  }
+}
+
+.articles-test-small {
+  background: url("../assets/images/test.jpg");
+  background-size: cover;
+  width: 374px;
+  height: 549px;
+  border-radius: 11px;
+}
 .container-team {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   text-align: left;
   justify-items: center;
+  padding-top: 207px;
 }
 
 .team-left {

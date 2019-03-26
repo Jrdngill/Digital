@@ -53,6 +53,15 @@
     color: $color;
 }
 
+
+@mixin article-heading($color: $white) {
+    font-size: 30px;
+    line-height: 31px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 600;
+    color: $color;
+}
+
 // Body Text
 
 %medium {
@@ -111,5 +120,18 @@
 @mixin small-text-bold-active($color: $yellow-orange) {
     font-weight: 700;
     @extend %small;
+    color: $color;
+}
+
+%extra-small {
+    font-size: 18px;
+    font-family: 'Karla', sans-serif;
+
+}
+
+@mixin extra-small-text($color: $white) {
+    font-weight: 400;
+    font-style: italic;
+    @extend %extra-small;
     color: $color;
 }
