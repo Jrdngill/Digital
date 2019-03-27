@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <font-awesome-icon icon="Twitter"/>
+    <vue-facebook-chat :app-id="YOUR_APP_IDD" :page-id="YOUR_PAGE_ID"></vue-facebook-chat>
+    <!-- To do: off stream -->
     <router-view/>
   </div>
 </template>

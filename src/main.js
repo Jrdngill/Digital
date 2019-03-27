@@ -10,14 +10,16 @@ import {
     faUserSecret
 } from '@fortawesome/free-solid-svg-icons'
 import {
-    faTwitter
+    faTwitter,
+    faFacebook,
+    faInstagram
 } from '@fortawesome/free-brands-svg-icons'
 import {
     FontAwesomeIcon
 } from '@fortawesome/vue-fontawesome'
 
 library.add(faUserSecret,
-    faTwitter)
+    faTwitter, faFacebook, faInstagram)
 
 Vue.component('font-awesome-icon', FontAwesomeIcon)
 Vue.use(VueFbChat)

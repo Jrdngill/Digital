@@ -4,8 +4,20 @@
       <h1>Maestro Media Group B.V.</h1>
       <p class="large-text">
         Snellius 1, Office A6, 6442 RM Herleen
-        <br>info@maestrodigital.nl
+        <br>
+        <a href="mailto:info@maestrodigital.nl">info@maestrodigital.nl</a>
       </p>
+      <div class="socials">
+        <a href="https://twitter.com/maestrodigital_">
+          <font-awesome-icon :icon="['fab', 'instagram']" size="2x"/>
+        </a>
+        <a href="https://www.facebook.com/mmgbvdigital/">
+          <font-awesome-icon :icon="['fab', 'facebook']" size="2x"/>
+        </a>
+        <a href="https://twitter.com/maestrodigital_">
+          <font-awesome-icon :icon="['fab', 'twitter']" size="2x"/>
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -31,11 +43,30 @@ body {
   padding-top: 184px;
 }
 
+.socials {
+  padding-top: 70px;
+  color: $white;
+
+  svg {
+    padding-right: 30px;
+  }
+
+  a {
+    color: $white;
+  }
+}
+
 h1 {
   @include footer-heading;
+  text-decoration: none;
 }
 
 p {
   @include large-text;
+
+  a {
+    text-decoration: underline;
+    color: $white;
+  }
 }
 </style>
