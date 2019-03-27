@@ -1,8 +1,9 @@
 <template>
   <div class="home">
     <Header/>
+    <Languages/>
     <div class="container">
-      <h1>WE ARE MAESTRO</h1>
+      <h1>{{ $t('heroMsg') }}</h1>
       <br>
       <router-link to="/about">
         <button>Get to know us</button>
@@ -127,6 +128,7 @@ import HelloWorld from "@/components/HelloWorld.vue";
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import Team from "@/components/Team.vue";
+import Languages from "@/components/Languages.vue";
 
 export default {
   name: "home",
@@ -134,7 +136,8 @@ export default {
     HelloWorld,
     Team,
     Header,
-    Footer
+    Footer,
+    Languages
   }
 };
 </script>
