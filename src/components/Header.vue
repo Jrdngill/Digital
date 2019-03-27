@@ -2,13 +2,14 @@
   <div class="nav">
     <div class="nav-left">
       <img src="../assets/images/logo.png" width="42" height="42">
+      <Languages/>
     </div>
     <div class="nav-center">
-      <router-link to="/">Home</router-link>
-      <router-link to="/services">Services</router-link>
-      <router-link to="/cases">Cases</router-link>
-      <router-link to="/news">News & Blog</router-link>
-      <router-link to="/contact">Contact</router-link>
+      <router-link to="/">{{ $t('headerHomePage') }}</router-link>
+      <router-link to="/services">{{ $t('headerServicePage') }}</router-link>
+      <router-link to="/cases">{{ $t('headerCasesPage') }}</router-link>
+      <router-link to="/news">{{ $t('headerNewsPage') }}</router-link>
+      <router-link to="/contact">{{ $t('headerContactPage') }}</router-link>
     </div>
     <div class="nav-right">
       <p>Messenger</p>
@@ -17,8 +18,13 @@
 </template>
 
 <script>
+import Languages from "@/components/Languages.vue";
+
 export default {
-  name: "Header"
+  name: "Header",
+  components: {
+    Languages
+  }
 };
 </script>
 

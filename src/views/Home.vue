@@ -1,12 +1,11 @@
 <template>
   <div class="home">
     <Header/>
-    <Languages/>
     <div class="container">
       <h1>{{ $t('heroMsg') }}</h1>
       <br>
       <router-link to="/about">
-        <button>Get to know us</button>
+        <button>{{ $t('heroBtnMsg') }}</button>
       </router-link>
     </div>
     <div class="gradient-background">
@@ -19,36 +18,28 @@
         allowfullscreen
       ></iframe>
       <div class="container-title">
-        <h2>Masters in connecting your brand with GEN-Z and Millenials.</h2>
+        <h2>{{ $t('serviceHeaderMsg') }}</h2>
       </div>
       <div class="container-services">
         <div class="service-left">
           <h4>01</h4>
-          <h3>Branding</h3>
-          <p
-            class="medium-text"
-          >Working out and coming up with concepts from A to Z. Thanks to our broad knowledge, tools and partners in the field of esports and broadcasting, we develop original concepts.</p>
+          <h3>{{ $t('serviceSubHeader01') }}</h3>
+          <p class="medium-text">{{ $t('serviceSubHeaderText01') }}</p>
         </div>
         <div class="service-right">
           <h4>02</h4>
-          <h3>Esports</h3>
-          <p
-            class="medium-text"
-          >With years of experience in having esport teams playing in esport tournaments such as the Copenhagen Games, Maestro Digital is the market leader in the field of esports in the Benelux.</p>
+          <h3>{{ $t('serviceSubHeader02') }}</h3>
+          <p class="medium-text">{{ $t('serviceSubHeaderText02') }}</p>
         </div>
         <div class="service-left">
           <h4>03</h4>
-          <h3>Marketing</h3>
-          <p
-            class="medium-text"
-          >Reaching young people together with the gaming and millennial market. Thanks to our experience in esports and general marketing, we can make every brand appeal to young people and ensure brand activation.</p>
+          <h3>{{ $t('serviceSubHeader03') }}</h3>
+          <p class="medium-text">{{ $t('serviceSubHeaderText03') }}</p>
         </div>
         <div class="service-right">
           <h4>04</h4>
-          <h3>Graphic design</h3>
-          <p
-            class="medium-text"
-          >Creating and coming up with graphic concepts such as design and online related. Thanks to our experienced programmers and designers, we can create and set up projects in your house style.</p>
+          <h3>{{ $t('serviceSubHeader04') }}</h3>
+          <p class="medium-text">{{ $t('serviceSubHeaderText04') }}</p>
         </div>
       </div>
     </div>
@@ -58,9 +49,9 @@
         <img src="../assets/images/phone.png">
       </div>
       <div class="portfolio-right">
-        <h3>Want to see our previous work?</h3>
+        <h3>{{ $t('portfolioHeaderMsg') }}</h3>
         <div class="portfolio-right-button">
-          <button>Yes please!</button>
+          <button>{{ $t('portfolioBtnMsg') }}</button>
         </div>
       </div>
     </div>
@@ -110,10 +101,10 @@
 
     <div class="container-team">
       <div class="team-left">
-        <h3>Do you want to work with us?</h3>
+        <h3>{{ $t('teamHeaderMsg') }}</h3>
       </div>
       <div class="team-right">
-        <button>Contact Us</button>
+        <button>{{ $t('teamBtnMsg') }}</button>
       </div>
     </div>
 
@@ -128,7 +119,6 @@ import HelloWorld from "@/components/HelloWorld.vue";
 import Header from "@/components/Header.vue";
 import Footer from "@/components/Footer.vue";
 import Team from "@/components/Team.vue";
-import Languages from "@/components/Languages.vue";
 
 export default {
   name: "home",
@@ -136,8 +126,7 @@ export default {
     HelloWorld,
     Team,
     Header,
-    Footer,
-    Languages
+    Footer
   }
 };
 </script>
