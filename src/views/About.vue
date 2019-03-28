@@ -3,28 +3,14 @@
     <Header/>
     <div class="gradient-container">
       <div class="about-container">
-        <h1>About Us</h1>
-        <h2>
-          From esport association to a company that provides services
-          to companies.
-        </h2>
+        <h1>{{ $t('aboutHeroBgMsg') }}</h1>
+        <h2>{{ $t('aboutHeroMsg') }}</h2>
         <div class="about-text">
           <div class="text-left">
-            <p class="large-text">
-              Maestro Digital is an all-round production house for esports,
-              events, web development and talent management. With five years
-              of experience in the international esport and web development
-              industry, Maestro Digital is one of the first companies focused
-              on esports, events and media in the Benelux.
-            </p>
+            <p class="large-text">{{ $t('aboutHeroText01') }}</p>
           </div>
           <div class="text-right">
-            <p class="large-text">
-              In addition, Maestro Digital, together with Maestro Esports, is part
-              of Maestro Media Group BV, a company created by passionate esport
-              professionals who have taken their international experience to the
-              ever-growing esport industry in the Netherlands & Belgium.
-            </p>
+            <p class="large-text">{{ $t('aboutHeroText02') }}</p>
           </div>
         </div>
       </div>
@@ -34,19 +20,14 @@
     </div>
     <div class="container-team">
       <div class="team-left">
-        <h3>The Maestro Team</h3>
+        <h3>{{ $t('aboutTeamTitle') }}</h3>
       </div>
       <div class="team-right">
-        <button>Contact Us</button>
+        <button>{{ $t('aboutTeamBtn') }}</button>
       </div>
     </div>
     <div class="container-team-text">
-      <p class="large-text-black">
-        Maestro has an excellent team of people who all have experience
-        in different industries. From sports management to marketing,
-        graphic design and website programming. We are an all-round sport
-        & esport media agency.
-      </p>
+      <p class="large-text-black">{{ $t('aboutTeamText') }}</p>
     </div>
     <Team-About/>
     <Footer/>

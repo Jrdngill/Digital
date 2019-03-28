@@ -47,6 +47,22 @@ const messages = {
         teamNameText: '',
         teamEmailText: '',
         teamRegionText: '',
+
+
+        // About Page English Translations
+        // Hero
+
+        aboutHeroBgMsg: 'ABOUT US',
+        aboutHeroMsg: 'From esport association to a company that provides services to companies.',
+        aboutHeroText01: 'Maestro Digital is an all-round production house for esports, events, web development and talent management. With five years of experience in the international esport and web development industry, Maestro Digital is one of the first companies focused on esports, events and media in the Benelux.',
+        aboutHeroText02: 'In addition, Maestro Digital, together with Maestro Esports, is part of Maestro Media Group BV, a company created by passionate esport professionals who have taken their international experience to the ever-growing esport industry in the Netherlands & Belgium.',
+
+        // Team 
+
+        aboutTeamTitle: 'The Maestro Team',
+        aboutTeamBtn: 'Contact Us',
+        aboutTeamText: 'Maestro has an excellent team of people who all have experience in different industries. From sports management to marketing, graphic design and website programming. We are an all-round sport & esport media agency.',
+
     },
     'nl': {
         // Header
@@ -88,6 +104,20 @@ const messages = {
         teamNameText: '',
         teamEmailText: '',
         teamRegionText: '',
+
+        // About Page Dutch Translations
+        // Hero
+
+        aboutHeroBgMsg: 'OVER ONS',
+        aboutHeroMsg: 'Van esport vereniging naar een onderneming die diensten verleend aan bedrijven.',
+        aboutHeroText01: 'Maestro Digital is een all-round productiehuis voor esports, evenementen, webontwikkeling en talent management. Met vijf jaar ervaring in de internationale esport en webontwikkeling industrie is Maestro Digital een van de eerste ondernemingen gericht op esports, events en media in de Benelux.',
+        aboutHeroText02: 'Daarnaast is Maestro Digital samen met Maestro Esports onderdeel van Maestro Media Group BV, een onderneming die ontstaan is door gepassioneerde esport professionals die hun internationale ervaring mee naar de nog groeiende esport industrie in Nederland & België hebben genomen.',
+
+        // Team 
+
+        aboutTeamTitle: 'Het Maestro Team',
+        aboutTeamBtn: 'Contactpagina',
+        aboutTeamText: 'Maestro heeft een uitstekend samenwerkend team van mensen die allemaal ervaring hebben in verschillende branches. Van sports management naar marketing, grafische vormgeving en het programmeren van websites. We zijn een all-round sport & esport media bureau.',
 
     }
 };
